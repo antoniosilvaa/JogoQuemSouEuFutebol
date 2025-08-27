@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #0f9d58, #1a472a);
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#game {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  width: 60%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  background: #ffd700;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+#pontuacao, #recorde {
+  margin-top: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 1.8em;
+}
+
+#ranking {
+  list-style: none;
+  padding: 0;
+}
+
+#ranking li {
+  background: rgba(0, 0, 0, 0.3);
+  margin: 5px auto;
+  padding: 8px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+#game {
+  margin-top: 20px;
+}
+
+#imagem-jogador {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  transition: filter 0.5s ease;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#ranking {
+  list-style-type: none;
+  padding: 0;
+}
+
