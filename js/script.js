@@ -1,6 +1,5 @@
 const jogadores = [
-  // Exemplos internacionais
-  {nome: "Messi", dicas: [
+{nome: "Messi", dicas: [
       "Sou argentino",
       "Ganhei a Copa de 2022",
       "Joguei no Barcelona e PSG",
@@ -223,7 +222,7 @@ function verificar() {
 
   if (!jogadorAtual) return;
 
-  // Acertou
+
   if (resposta === jogadorAtual.nome.toLowerCase()) {
     document.getElementById("resultado").innerHTML = "✅ Acertou! Era " + jogadorAtual.nome + "!";
     pontuacao += 10;

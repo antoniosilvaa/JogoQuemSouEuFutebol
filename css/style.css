@@ -4,6 +4,7 @@ body {
   color: white;
   text-align: center;
   padding: 40px;
+  margin: 0;
 }
 
 h1 {
@@ -17,6 +18,7 @@ h1 {
   border-radius: 15px;
   max-width: 500px;
   margin: auto;
+  box-sizing: border-box;
 }
 
 input {
@@ -25,6 +27,7 @@ input {
   border: none;
   font-size: 1em;
   width: 60%;
+  box-sizing: border-box;
 }
 
 button {
@@ -66,37 +69,73 @@ h2 {
   max-width: 300px;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f4f4f4;
-}
-
-#game {
-  margin-top: 20px;
-}
-
 #imagem-jogador {
   width: 200px;
   height: 200px;
   margin: 10px;
   transition: filter 0.5s ease;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #ffd700;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  background: #fff;
 }
 
-input {
-  padding: 5px;
-  margin: 5px;
-  width: 200px;
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  #game {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  #imagem-jogador {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    border-radius: 10px;
+    border-width: 2px;
+  }
+  input {
+    width: 90%;
+    font-size: 1em;
+    padding: 8px;
+    margin: 8px 0;
+  }
+  button {
+    padding: 8px 12px;
+    font-size: 1em;
+    margin-left: 0;
+    margin-top: 8px;
+    border-radius: 8px;
+  }
+  #ranking li {
+    max-width: 95vw;
+    font-size: 0.95em;
+    padding: 6px;
+  }
 }
 
-button {
-  padding: 5px 10px;
-  margin: 5px;
-  cursor: pointer;
+#botoes-jogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-#ranking {
-  list-style-type: none;
-  padding: 0;
+@media (max-width: 600px) {
+  #botoes-jogo {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
 }
+
+
 
